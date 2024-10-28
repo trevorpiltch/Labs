@@ -4,3 +4,6 @@
 [submodule "Depot-Tutorial"]
 	path = Depot-Tutorial
 	url = git@github.com:trevorpiltch/Depot-Tutorial.git
+[submodule "go"]
+	path = go
+	url = https://github.com/trevorpiltch/go

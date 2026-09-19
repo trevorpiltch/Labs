@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @product.image_url %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<% @product.orders.each do |order| %>
+    <h3>Order <%= order.id%></h3>
+    <table>
+        <tr>
+            <th>
+                <text>Name: <%= order.name %></text>
+            </th>
+            
+        </tr>
+        <tr>
+            <th>
+                <text>Adress: <%= order.address %></text>
+            </th>
+            
+        </tr>
+        <tr>
+            <th>
+                <text>Email: <%= order.email %></text>
+            </th>
+            
+        </tr>
+        <tr>
+            <th>
+                <text>Payed by: <%= order.pay_type %></text>
+            </th>
+            
+        </tr>
+    </table>
+<% end %>

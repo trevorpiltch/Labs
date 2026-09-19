@@ -1,0 +1,15 @@
+---
+translations:
+  - file: "app/assets/javascripts/date_formats.js"
+    patterns:
+      - "*.date.formats"
+  - file: "app/assets/javascripts/other.js"
+    patterns:
+      - "*.activerecord"
+      - "*.admin.*.title"
+  - file: "app/assets/javascripts/everything_else.js"
+    patterns:
+      # Notice the exclamation mark.
+      - "!*.activerecord"
+      - "!*.admin.*.title"
+      - "!*.date.formats"

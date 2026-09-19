@@ -1,0 +1,76 @@
+es:
+  layouts:
+    application:
+      title: "Biblioteca de Pragmatic"
+      home: "Inicio"
+      questions: "Preguntas"
+      news: "Noticias"
+      contact: "Contacto"
+
+  store:
+    index:  
+      title_html: "Su Cat&aacute;logo de Pragmatic"
+      add_html: "A&ntilde;adir al Carrito"
+
+  carts:
+    cart:
+      title: "Carrito de la Compra"
+      empty: "Vaciar Carrito"
+      checkout: "Comprar"
+
+  orders: 
+    new:
+      legend: "Por favor, introduzca sus datos"
+    form:
+      name: "Nobre"
+      address_html: "Direcci&oacute;n"
+      email: "E-mail"
+      pay_type: "Forma de pago"
+      pay_prompt_html: "Seleccione un m&eacute todo de pago"
+      submit: "Realizar Pedilo"
+      pay_types:
+        check: "Cheque"
+        credit_card: "Tarjeta de Cr&eacute;dito"
+        purchase_order: "Orden de Compra"
+      check_pay_type: 
+        routing_number: "# de Enrutamiento"
+        account_number: "# de Cuenta"
+      credit_card_pay_type:
+        cc_number: "N&uacute;mero"
+        expiration_date: "Expiraci&oacute;n"
+      purchase_order_pay_type:
+        po_number: "N&uacute;mero"
+
+  activerecord:
+    models:
+      order: "pedido"
+
+    attributes: 
+      order:
+        address: "Direcci&oacute;n"
+        name: "Nombre"
+        email: "E-mail"
+        pay_type: "Forma de pago"
+
+    errors:
+      messages:  
+        includes: "no est &aactue; includio en la lista"
+        blank: "no puede quedar en blanco"
+  
+  errors:
+    template: 
+      body: "Hay problemas con los siguientes campos:"
+      header: 
+        one: "1 error ha impedido que este %{model} se quarde"
+        other: "%{count} errores han impedidio que este %{model} se guarde"
+
+  number: 
+    currency:
+      format: 
+        unit: "$US"
+        precision: 2
+        seperator: ","
+        delimiter: "."
+        format: "%n&nbsp;%u"
+  
+  thanks: "Gracies por su pedido"
